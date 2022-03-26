@@ -35,85 +35,126 @@
       </nav>
     </header>
     <main>
-      <div class="hero slide-1">
-        <picture>
-          <source
-            media="(max-width: 799px)"
-            srcset="images/mobile-image-hero-1.jpg"
-          />
-          <source
-            media="(min-width: 800px)"
-            srcset="images/desktop-image-hero-1.jpg"
-          />
-          <img
-            src="images/mobile-image-hero-1.jpg"
-            alt=""
-            class="img-shop-now"
-          />
-        </picture>
-        <section class="shop-now slide-1">
-          <h1 class="heading-shop-now">Discover innovative ways to decorate</h1>
-          <p class="paragraph">
-            We provide unmatched quality, comfort, and style for property owners
-            across the country. Our experts combine form and function in
-            bringing your vision to life. Create a room in your own style with
-            our collection and make your property a reflection of you and what
-            you love.
-          </p>
-          <a href="#" class="shop-now-link"
-            >Shop now
-            <img src="images/icon-arrow.svg" alt="" class="arrow-icon"
-          /></a>
-          <div class="wrapper-control">
-            <button class="btn-control">
-              <img
-                src="images/icon-angle-left.svg"
+      <div class="slider-container">
+        <div class="slide active">
+          <picture>
+            <source
+              media="(max-width: 375px)"
+              srcset="images/mobile-image-hero-1.jpg"
+            />
+            <source
+              media="(min-width: 376px)"
+              srcset="images/desktop-image-hero-1.jpg"
+            />
+            <img
+              src="images/mobile-image-hero-1.jpg"
+              alt=""
+              class="img-shop-now"
+            />
+          </picture>
+          <section class="shop-now">
+            <h1 class="heading-shop-now">
+              Discover innovative ways to decorate
+            </h1>
+            <p class="paragraph">
+              We provide unmatched quality, comfort, and style for property
+              owners across the country. Our experts combine form and function
+              in bringing your vision to life. Create a room in your own style
+              with our collection and make your property a reflection of you and
+              what you love.
+            </p>
+            <a href="#" class="shop-now-link"
+              >Shop now
+              <img src="images/icon-arrow.svg" alt="" class="arrow-icon"
+            /></a>
+          </section>
+        </div>
+        <div class="slide">
+          <picture>
+            <source
+              media="(max-width: 375px)"
+              srcset="images/mobile-image-hero-2.jpg"
+            />
+            <source
+              media="(min-width: 376px)"
+              srcset="images/desktop-image-hero-2.jpg"
+            />
+            <img
+              src="images/mobile-image-hero-2.jpg"
+              alt=""
+              class="img-shop-now"
+            />
+          </picture>
+          <section class="shop-now">
+            <h1 class="heading-shop-now">
+              We are available all across the globe
+            </h1>
+            <p class="paragraph">
+              With stores all over the world, it's easy for you to find
+              furniture for your home or place of business. Locally, we’re in
+              most major cities throughout the country. Find the branch nearest
+              you using our store locator. Any questions? Don't hesitate to
+              contact us today.
+            </p>
+            <a href="#" class="shop-now-link"
+              >Shop now<img
+                src="images/icon-arrow.svg"
                 alt=""
-                class="carousel-icon"
-              />
-            </button>
-            <button class="btn-control">
-              <img
-                src="images/icon-angle-right.svg"
+                class="arrow-icon"
+            /></a>
+          </section>
+        </div>
+        <div class="slide">
+          <picture>
+            <source
+              media="(max-width: 375px)"
+              srcset="images/mobile-image-hero-3.jpg"
+            />
+            <source
+              media="(min-width: 376px)"
+              srcset="images/desktop-image-hero-3.jpg"
+            />
+            <img
+              src="images/mobile-image-hero-3.jpg"
+              alt=""
+              class="img-shop-now"
+            />
+          </picture>
+          <section class="shop-now">
+            <h1 class="heading-shop-now">
+              Manufactured with the best materials
+            </h1>
+            <p class="paragraph">
+              Our modern furniture store provide a high level of quality. Our
+              company has invested in advanced technology to ensure that every
+              product is made as perfect and as consistent as possible. With
+              three decades of experience in this industry, we understand what
+              customers want for their home and office.
+            </p>
+            <a href="#" class="shop-now-link"
+              >Shop now<img
+                src="images/icon-arrow.svg"
                 alt=""
-                class="carousel-icon"
-              />
-            </button>
-          </div>
-        </section>
-      </div>
-      <div class="slide-2">
-        <img src="images/mobile-image-hero-2.jpg" alt="" class="img-shop-now" />
-        <section class="shop-now">
-          <h1 class="heading-shop-now">
-            We are available all across the globe
-          </h1>
-          <p class="paragraph">
-            With stores all over the world, it's easy for you to find furniture
-            for your home or place of business. Locally, we’re in most major
-            cities throughout the country. Find the branch nearest you using our
-            store locator. Any questions? Don't hesitate to contact us today.
-          </p>
-          <a href="#" class="shop-now-link"
-            >Shop now<img src="images/icon-arrow.svg" alt="" class="arrow-icon"
-          /></a>
-        </section>
-      </div>
-      <div class="slide-3">
-        <img src="images/mobile-image-hero-3.jpg" alt="" class="img-shop-now" />
-        <section class="shop-now">
-          <h1 class="heading-shop-now">Manufactured with the best materials</h1>
-          <p class="paragraph">
-            Our modern furniture store provide a high level of quality. Our
-            company has invested in advanced technology to ensure that every
-            product is made as perfect and as consistent as possible. With three
-            decades of experience in this industry, we understand what customers
-            want for their home and office.
-          </p>
-          <a href="#" class="shop-now-link"
-            >Shop now<img src="images/icon-arrow.svg" alt="" class="arrow-icon"
-          /></a>
-        </section>
+                class="arrow-icon"
+            /></a>
+          </section>
+        </div>
+        <div class="wrapper-control">
+          <button class="btn-control" id="prev">
+            <img
+              src="images/icon-angle-left.svg"
+              alt=""
+              class="carousel-icon"
+            />
+          </button>
+          <button class="btn-control" id="next">
+            <img
+              src="images/icon-angle-right.svg"
+              alt=""
+              class="carousel-icon"
+            />
+          </button>
+        </div>
       </div>
       <div class="about-wrapper">
         <img src="images/image-about-dark.jpg" alt="" class="img-about" />
@@ -140,5 +181,7 @@
         <a href="https://nakoyawilson.netlify.app/">Nakoya Wilson</a>.
       </p>
     </footer>
+
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -103,14 +103,20 @@ button {
 
 /* Shop Now */
 
-.slide-2,
-.slide-3 {
+.slider-container {
+  position: relative;
+}
+
+.slide {
   display: none;
+}
+
+.slide.active {
+  display: block;
 }
 
 .shop-now {
   padding: 7.2rem 3.2rem;
-  position: relative;
 }
 
 .img-shop-now {
@@ -151,7 +157,7 @@ button {
   background-color: var(--black);
   display: flex;
   position: absolute;
-  top: -5.6rem;
+  top: 30.4rem;
   right: 0;
 }
 
@@ -245,14 +251,13 @@ button {
 
   /* Shop Now */
 
-  .hero {
-    display: grid;
+  .slide {
+    display: none;
     grid-template-columns: 1fr 41.1667%;
   }
 
-  .slide-2,
-  .slide-3 {
-    display: none;
+  .slide.active {
+    display: grid;
   }
 
   .shop-now {
@@ -280,13 +285,9 @@ button {
   }
 
   .wrapper-control {
-    background-color: var(--black);
-    display: flex;
-    position: absolute;
     top: auto;
-    right: auto;
     bottom: 0;
-    left: 0;
+    right: 30.1%;
   }
 
   .btn-control {
