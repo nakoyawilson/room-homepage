@@ -57,6 +57,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 /* Navigation */
@@ -102,6 +103,10 @@ button {
 
 /* Shop Now */
 
+.slide {
+  position: relative;
+}
+
 .slide-2,
 .slide-3 {
   display: none;
@@ -144,6 +149,23 @@ button {
 .arrow-icon {
   margin-left: 3.3rem;
   display: inline-block;
+}
+
+.wrapper-control {
+  background-color: var(--black);
+  display: flex;
+  position: absolute;
+  top: 30.4rem;
+  right: 0;
+}
+
+.btn-control {
+  width: 5.6rem;
+  height: 5.6rem;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* About */
