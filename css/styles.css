@@ -164,6 +164,10 @@ button {
   align-items: center;
 }
 
+.carousel-icon {
+  width: 0.84rem;
+}
+
 /* About */
 
 .img-about {
@@ -198,4 +202,114 @@ button {
 .attribution a {
   color: var(--black);
   text-decoration: none;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 376px) {
+  /* Header */
+
+  .header {
+    top: 6.4rem;
+    left: 6.4rem;
+    width: 36.1rem;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  /* Navigation */
+
+  .nav {
+    position: static;
+    background-color: transparent;
+    width: auto;
+    padding: 0;
+    transform: translateX(0);
+  }
+
+  .nav::before {
+    content: none;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 3.2rem;
+  }
+
+  .nav-link {
+    color: var(--white);
+  }
+
+  /* Shop Now */
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 41.1667%;
+  }
+
+  .slide-2,
+  .slide-3 {
+    display: none;
+  }
+
+  .shop-now {
+    padding: 12rem 10rem 0;
+    position: relative;
+  }
+
+  .img-shop-now {
+    width: 100%;
+  }
+
+  .heading-shop-now {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    width: min(100%, 40rem);
+  }
+
+  .shop-now .paragraph {
+    margin-top: 2.2rem;
+    width: min(100%, 40rem);
+  }
+
+  .shop-now-link {
+    margin-top: 3.2rem;
+  }
+
+  .wrapper-control {
+    background-color: var(--black);
+    display: flex;
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+  }
+
+  .btn-control {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .carousel-icon {
+    width: 1.2rem;
+  }
+
+  /* About */
+
+  .about-wrapper {
+    display: grid;
+    grid-template-columns: 29.1667% 1fr 29.1667%;
+  }
+
+  .about {
+    padding: 6.8rem 4.8rem;
+  }
+
+  .about .paragraph {
+    width: min(100%, 48.4rem);
+  }
 }

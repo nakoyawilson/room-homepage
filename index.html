@@ -18,10 +18,14 @@
   </head>
   <body>
     <header class="header">
-      <button><img src="images/icon-hamburger.svg" alt="" /></button>
+      <button class="mobile-nav">
+        <img src="images/icon-hamburger.svg" alt="" />
+      </button>
       <img src="images/logo.svg" alt="" />
       <nav class="nav">
-        <button><img src="images/icon-close.svg" alt="" /></button>
+        <button class="mobile-nav">
+          <img src="images/icon-close.svg" alt="" />
+        </button>
         <ul class="nav-links">
           <li><a href="#" class="nav-link">Home</a></li>
           <li><a href="#" class="nav-link">Shop</a></li>
@@ -31,8 +35,22 @@
       </nav>
     </header>
     <main>
-      <div class="slide slide-1">
-        <img src="images/mobile-image-hero-1.jpg" alt="" class="img-shop-now" />
+      <div class="hero slide-1">
+        <picture>
+          <source
+            media="(max-width: 799px)"
+            srcset="images/mobile-image-hero-1.jpg"
+          />
+          <source
+            media="(min-width: 800px)"
+            srcset="images/desktop-image-hero-1.jpg"
+          />
+          <img
+            src="images/mobile-image-hero-1.jpg"
+            alt=""
+            class="img-shop-now"
+          />
+        </picture>
         <section class="shop-now slide-1">
           <h1 class="heading-shop-now">Discover innovative ways to decorate</h1>
           <p class="paragraph">
@@ -48,10 +66,18 @@
           /></a>
           <div class="wrapper-control">
             <button class="btn-control">
-              <img src="images/icon-angle-left.svg" alt="" />
+              <img
+                src="images/icon-angle-left.svg"
+                alt=""
+                class="carousel-icon"
+              />
             </button>
             <button class="btn-control">
-              <img src="images/icon-angle-right.svg" alt="" />
+              <img
+                src="images/icon-angle-right.svg"
+                alt=""
+                class="carousel-icon"
+              />
             </button>
           </div>
         </section>
@@ -89,19 +115,21 @@
           /></a>
         </section>
       </div>
-      <img src="images/image-about-dark.jpg" alt="" class="img-about" />
-      <section class="about">
-        <h2 class="heading-about">About our furniture</h2>
-        <p class="paragraph">
-          Our multifunctional collection blends design and function to suit your
-          individual taste. Make each room unique, or pick a cohesive theme that
-          best express your interests and what inspires you. Find the furniture
-          pieces you need, from traditional to contemporary styles or anything
-          in between. Product specialists are available to help you create your
-          dream space.
-        </p>
-      </section>
-      <img src="images/image-about-light.jpg" alt="" class="img-about" />
+      <div class="about-wrapper">
+        <img src="images/image-about-dark.jpg" alt="" class="img-about" />
+        <section class="about">
+          <h2 class="heading-about">About our furniture</h2>
+          <p class="paragraph">
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
+        </section>
+        <img src="images/image-about-light.jpg" alt="" class="img-about" />
+      </div>
     </main>
     <footer>
       <p class="attribution">
