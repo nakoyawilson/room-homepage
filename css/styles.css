@@ -30,7 +30,6 @@ body {
   font-family: var(--font);
   font-weight: 500;
   font-size: 1.2rem;
-  line-height: 2rem;
 }
 
 img {
@@ -45,6 +44,7 @@ button {
 /* Shared Styles */
 
 .paragraph {
+  line-height: 2rem;
   letter-spacing: -0.25px;
 }
 
@@ -103,18 +103,14 @@ button {
 
 /* Shop Now */
 
-.slide {
-  position: relative;
-}
-
 .slide-2,
 .slide-3 {
   display: none;
 }
 
 .shop-now {
-  margin: 7.2rem auto;
-  width: min(82.9%, 31.1rem);
+  padding: 7.2rem 3.2rem;
+  position: relative;
 }
 
 .img-shop-now {
@@ -155,7 +151,7 @@ button {
   background-color: var(--black);
   display: flex;
   position: absolute;
-  top: 30.4rem;
+  top: -5.6rem;
   right: 0;
 }
 
@@ -175,8 +171,7 @@ button {
 }
 
 .about {
-  margin: 5.6rem auto;
-  width: min(82.9%, 31.1rem);
+  padding: 5.6rem 3.2rem;
 }
 
 .heading-about {
