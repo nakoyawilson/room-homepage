@@ -363,4 +363,10 @@ button {
     width: min(100%, 48.4rem);
     margin: 6.8rem auto 0;
   }
+
+  /* Footer */
+
+  .attribution a:hover {
+    color: var(--dark-gray);
+  }
 }
