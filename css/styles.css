@@ -125,7 +125,8 @@ button {
 }
 
 .shop-now {
-  padding: 7.2rem 3.2rem;
+  width: min(82.9333%, 31.1rem);
+  margin: 7.2rem auto;
 }
 
 .img-shop-now {
@@ -190,7 +191,8 @@ button {
 }
 
 .about {
-  padding: 5.6rem 3.2rem;
+  width: min(82.9333%, 31.1rem);
+  margin: 5.6rem auto;
 }
 
 .heading-about {
@@ -249,6 +251,9 @@ button {
   }
 
   .nav-links {
+    position: relative;
+    right: 0.2rem;
+    bottom: 0.1rem;
     list-style: none;
     display: flex;
     gap: 3.2rem;
@@ -262,7 +267,7 @@ button {
 
   .slide {
     display: none;
-    grid-template-columns: 1fr 41.1667%;
+    grid-template-columns: 1fr 41.7%;
   }
 
   .slide.active {
@@ -270,7 +275,8 @@ button {
   }
 
   .shop-now {
-    padding: 12rem 10rem 0;
+    width: min(100%, 40rem);
+    margin: 12rem auto 0 10rem;
     position: relative;
   }
 
@@ -281,12 +287,12 @@ button {
   .heading-shop-now {
     font-size: 4rem;
     line-height: 4.5rem;
+    letter-spacing: -1.66667px;
     width: min(100%, 40rem);
   }
 
   .shop-now .paragraph {
     margin-top: 2.2rem;
-    width: min(100%, 40rem);
   }
 
   .shop-now-link {
@@ -296,7 +302,8 @@ button {
   .wrapper-control {
     top: auto;
     bottom: 0;
-    right: 30.1%;
+    left: 58.3%;
+    right: auto;
   }
 
   .btn-control {
@@ -312,14 +319,11 @@ button {
 
   .about-wrapper {
     display: grid;
-    grid-template-columns: 29.1667% 1fr 29.1667%;
+    grid-template-columns: 29.1667% 1fr 30.55%;
   }
 
   .about {
-    padding: 6.8rem 4.8rem;
-  }
-
-  .about .paragraph {
     width: min(100%, 48.4rem);
+    margin: 6.8rem auto 0;
   }
 }
